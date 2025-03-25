@@ -1,0 +1,30 @@
+input[type='text'] {
+    width: 30%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.botao {
+    display: block;
+    width: 15%;
+    padding: 10px 15px;
+    border: 0;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.botao:hover {
+    background: #444;
+    cursor: pointer;
+}
+
+.problema {
+    background: red;
+    color: cornsilk;
+    padding: 5px;
+    margin: 5px;
+}

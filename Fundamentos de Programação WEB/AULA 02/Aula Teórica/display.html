@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display, Position e Z-Index</title>
+    <style>
+        ul,
+        li {
+            display: inline;
+        }
+
+        div.static {
+            position: static;
+            border: 3px solid #3f21ad;
+        }
+
+        div.relative {
+            position: relative;
+            left: 30px;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #3f21ad;
+        }
+
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #3f21ad;
+        }
+
+        div.absolute {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Lista</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h2>Posição: Estática</h2>
+
+    <p>Um elemento com posição estática é sempre posicionado de acordo com o fluxo normal da página</p>
+
+    <div class="static">Aqui - Static</div>
+
+    <h2>posição: relativa;</h2>
+
+    <p>Um elemento com posição: relativa; está posicionado em relação à sua posição normal:</p>
+
+    <div class="relative">
+        Aqui - position: relative;
+    </div>
+    <h2>position: absolute;</h2>
+
+    <p>Um elemento com posição: absoluto; é posicionado em relação ao ancestral posicionado mais próximo (em vez de
+        posicionado em relação à janela de visualização, como fixo):</p>
+    
+    <div class="absolute">
+        Div Absoluta
+    </div>
+
+     <div class="fixed">
+        essa div tem posição fixa
+    </div>
+</body>
+
+</html>

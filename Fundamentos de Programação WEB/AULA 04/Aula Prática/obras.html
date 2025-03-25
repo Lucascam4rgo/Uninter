@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #506e6a;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+            /*https://nekocalc.com/px-to-rem-converter*/
+        }
+
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #506e6a;
+            color: white;
+            text-align: center;
+        }
+
+        .card {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506e6a;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506e6a 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506e6a;
+            color: white;
+        }
+
+        .img {
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin: 0.8rem;
+        }
+
+        .img img {
+            width: 115px;
+            height: 130px;
+        }
+
+        /* media query para dispositivos móveis */
+        @media all and (max-width: 35rem) {
+            body {
+                margin: 0 auto;
+            }
+
+            /*
+                .container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            */
+
+            .imagem_leo {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .img {
+                max-width: 28rem;
+                margin: 1rem;
+            }
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_leo {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Leonardo da Vinci</h1>
+        <br>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_leo">
+            <img src="img/leonardo-da-vinci.png">
+            <div class="infos">
+                <p><strong>Ocupação</strong> Pintor Italiano</p>
+                <p><strong>Data de nascimento</strong> 15/04/1452</p>
+                <p><strong>Ocupação</strong> 02/05/1519 (aos 67 anos)</p>
+            </div>
+        </aside>
+        <section class="principal">
+            <h1>Obras</h1>
+            <div class="card">
+                <div class="img">
+                    <img src="img/mona-lisa.png" alt="">
+
+                    <div class="">
+                        <h2>Mona Lisa</h2>
+                        <p>Uma das obras mais famosas do mundo</p>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="img/isabela.png" alt="">
+                    <div class="">
+                        <h2>Isabela d'Aragão</h2>
+                        <p>Uma das obras mais famosas do mundo</p>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="img/salvator-mundi.png" alt="">
+                    <div class="">
+                        <h2>Salvator Mundi</h2>
+                        <p>Uma das obras mais famosas do mundo</p>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="img/ginevra.png" alt="">
+                    <div class="">
+                        <h2>Ginevra de' Benci</h2>
+                        <p>Uma das obras mais famosas do mundo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+</body>
+
+</html>

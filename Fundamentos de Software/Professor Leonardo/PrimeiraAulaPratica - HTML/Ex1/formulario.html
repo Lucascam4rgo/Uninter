@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Mosca</title>
+</head>
+
+<body>
+
+    <h1>Pedido de Pizza</h1>
+
+    <form method="get" action="teste.html">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+
+        <br><br>
+
+        <label for="tamanho">Tamanho: </label>
+        <input type="radio" name="tamanho" id="tamanho" value="G" checked> Grande
+        <input type="radio" name="tamanho" id="tamanho" value="M"> Médio
+        <input type="radio" name="tamanho" id="tamanho" value="P"> Pequeno
+
+        <br><br>
+
+        <label for="sabor">Escolha um sabor: </label><br>
+
+        <select name="sabor" id="sabor">
+            <option value="Calabresa">Calabresa</option>
+            <option value="Marguerita">Marguerita</option>
+            <option value="Portuguesa">Portuguesa</option>
+            <option value="Frango">Frango</option>
+        </select>
+
+        <br><br>
+
+        <label for="Adicionais">Adicionais: </label><br>
+        <input type="checkbox" name="borda" value="sim"> Borda
+        <input type="checkbox" name="queijo" value="sim"> Queijo
+
+        <br><br>
+
+        <label for="dataEntrega">Data de Entrega:</label>
+        <input type="date" name="dataEntrega" id="dataEntrega">
+
+        <br><br>
+
+        <label for="textarea">Comentários:</label><br>
+        <textarea name="msg" id="msg" rows="10" cols="30"></textarea>
+
+        <br><br>
+
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>

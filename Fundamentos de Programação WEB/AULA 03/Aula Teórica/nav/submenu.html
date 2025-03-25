@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            width: 150px;
+        }
+
+        ul li {
+            position: relative;
+        }
+
+        li ul {
+            position: absolute;
+            left: 149px;
+            top: 0;
+            display: none;
+        }
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            color: #e2144a;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            background: #ccc;
+        }
+
+        li:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="#home">Home</a>
+            <ul>
+                <li><a href="#news">Sobre nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+        </li>
+    </ul>
+    <li><a href="#bumbum">Bumbum</a></li>
+    <li><a href="#contato">Contato</a></li>
+    </ul>
+</body>
+
+</html>

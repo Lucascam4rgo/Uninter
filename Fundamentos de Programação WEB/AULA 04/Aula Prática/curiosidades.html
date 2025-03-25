@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #506e6a;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+            /*https://nekocalc.com/px-to-rem-converter*/
+        }
+
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #506e6a;
+            color: white;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506e6a;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506e6a 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506e6a;
+            color: white;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_leo {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Leonardo da Vinci</h1>
+        <br>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_leo">
+            <img src="img/leonardo-da-vinci.png">
+            <div class="infos">
+                <p><strong>Ocupação</strong> Pintor Italiano</p>
+                <p><strong>Data de nascimento</strong> 15/04/1452</p>
+                <p><strong>Ocupação</strong> 02/05/1519 (aos 67 anos)</p>
+            </div>
+        </aside>
+        <section class="principal">
+            <h1>Leonardo da Vinci - Curiosidades</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus expedita itaque aliquid, eius quo
+                adipisci laborum tempora harum? Reprehenderit a voluptatibus odio, unde non numquam dicta nobis
+                molestiae repudiandae praesentium?
+                Dolorum vero veniam alias temporibus aspernatur odit aliquid inventore dolorem, sed velit, facere
+                voluptas error ipsum culpa iure quis pariatur. Deleniti harum alias eum sapiente saepe qui at sunt fuga.
+                Molestiae corrupti, illum qui blanditiis harum quod accusamus sapiente labore illo dolores hic. Est
+                assumenda recusandae excepturi similique, ipsum consequatur laborum! Tenetur quas eius sunt neque.
+                Exercitationem eveniet quod totam.
+                Odit ullam enim in pariatur incidunt est voluptas veritatis, labore quis ea doloremque nobis nihil
+                itaque libero dicta consectetur quaerat at delectus sequi dolores dolorem deleniti! Accusantium,
+                quaerat! Dolorum, delectus?
+                Laboriosam sunt quas illo iure reiciendis corporis consequuntur, at voluptatum quasi in atque minus
+                velit nulla tenetur. Hic ducimus, voluptates itaque, vero architecto, perferendis assumenda cumque
+                temporibus recusandae reprehenderit sunt?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut deserunt iste numquam voluptate, nihil quam
+                rem nisi repellendus exercitationem fuga ducimus quia quis neque, nulla debitis delectus ut facilis
+                ipsam.
+                Beatae corrupti id delectus iusto illum perferendis, accusamus sequi distinctio voluptatum blanditiis
+                hic neque ad illo quasi! Quaerat, asperiores id? Animi iure error saepe totam sunt earum enim! Eius,
+                magnam!
+                Ducimus fugiat illum deserunt exercitationem quaerat debitis repellat voluptatum excepturi ut
+                consectetur dolorem, omnis temporibus animi soluta delectus odit laudantium expedita tenetur doloremque
+                sit, quod necessitatibus! Nobis excepturi aperiam autem!
+                Eveniet non modi incidunt officiis cumque? Atque ad aperiam accusantium magni excepturi ab incidunt quis
+                soluta, officiis, fugit alias deserunt cumque numquam? Ratione incidunt consequuntur perferendis
+                corrupti suscipit placeat minima.</p>
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+</body>
+
+</html>

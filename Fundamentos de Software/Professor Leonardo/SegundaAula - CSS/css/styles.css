@@ -1,0 +1,38 @@
+.minhalista {
+    color: darksalmon;
+}
+
+h1.titulo {
+    color: blue;
+    font-size: 12px;
+}
+
+.titulo {
+    font-size: 50px;
+}
+
+.central {
+    text-align: center;
+}
+
+
+#tituloprincipal {
+    font-size: 90px;
+    color: crimson;
+}
+
+p {
+    background-color: cornsilk;
+}
+
+body {
+    background-color: rgb(243, 237, 156);
+}
+
+.caixa {
+    margin: 20px;
+    padding: 40px;
+    border: 4px solid black;
+    width: fit-content;
+    background-color: antiquewhite;
+}

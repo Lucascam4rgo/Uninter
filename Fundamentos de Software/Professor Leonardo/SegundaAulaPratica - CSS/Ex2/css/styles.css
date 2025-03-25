@@ -1,0 +1,16 @@
+.imagem {
+    background: url('../img/2d.jpg');
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    display: block;
+    background-size: contain;
+}
+
+.imagem:hover {
+    background-position: 0px 50px;
+}
+
+.imagem:active {
+    background-position: 50px 50px;
+}

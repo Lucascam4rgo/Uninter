@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+
+    <form>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome"><br><br>
+
+        <label for="cidade">Cidade: </label>
+        <input type="text" name="cidade" id="cidade"><br><br>
+
+        <button type="button" onclick="enviarDados()">Enviar</button>
+    </form>
+
+    <script>
+        function enviarDados() {
+            let nome = document.getElementById("nome").value;
+            let cidade = document.getElementById("cidade").value;
+
+            localStorage.setItem("nome", nome);
+            localStorage.setItem("cidade", cidade);
+
+            window.location.href = 'dados2.html';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletricista</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            margin: 0 auto;
+        }
+
+        header {
+            background: url(img/eletricista1.png) no-repeat center;
+            height: 600px;
+            top: 0;
+        }
+
+        .fontedes {
+            font-size: 5rem;
+            color: blue;
+            letter-spacing: 5px;
+        }
+
+        ul,
+        li {
+            width: 300px;
+            list-style-type: none;
+            margin: auto;
+            padding: 0;
+            background-color: #e80505;
+        }
+
+        li,
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 8px 16px;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .aside1 {
+            top: 450;
+            float: right;
+            width: 25%;
+        }
+
+        .setecinco {
+            float: left;
+            width: 75%;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .centraliza_img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        .fundo_preto {
+            background-color: black;
+            height: 234px;
+            clear: both;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+
+        .centraliza_div {
+            text-align: center;
+        }
+
+        .servicos {
+            background-color: #e88a0b;
+            border-radius: 10px;
+            width: 218px;
+            height: 264px;
+            display: inline-flex;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <p class="fontedes">Contrate um<br> profissional qualificado<br> para não perder <span
+                style="color: white;">dinheiro e tempo</span></p>
+    </header>
+    <div style="background-color: #222121; padding: 0 auto;">
+        <ul>
+            <li><a href="#orcamento">ORÇAMENTOS</a></li>
+        </ul>
+    </div>
+
+    <section class="setecinco">
+        <br><br>
+        <p class="fontedes">Sua família pode correr risco de vida com uma <br> instalação mal-feita ou até com
+            instalação <br>antiga</p> <br><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam nostrum nisi rem unde eius. Quo veritatis
+            ipsum accusamus accusantium placeat! Exercitationem maxime laudantium explicabo beatae aliquid fugit illo
+            dolores deserunt.</p>
+        <br><br>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, corporis, eum, ut repellendus minima
+            aliquid debitis eius dolor nisi possimus laboriosam excepturi inventore recusandae rem nulla provident
+            dolore quia sapiente.</p>
+    </section>
+
+    <section class="aside1">
+        <br><br><br><br>
+        <img class="centraliza_img" src="img/eletrica_ruim1.jpg" alt="" width="200" height="200"><br>
+        <img class="centraliza_img" src="img/eletrica_ruim2.jpg" alt="" width="200" height="200"><br>
+        <img class="centraliza_img" src="img/eletrica_ruim3.jpg" alt="" width="200" height="200"><br>
+    </section>
+
+    <section class="fundo_preto">
+        <div style="float: left; width: 25%;">
+            <img src="img/img_banner_2.png" style="margin: 3rem;" alt="">
+        </div>
+        <div style="float: left;">
+            <h1 style="margin: 3rem; color: aliceblue;">SERVIÇOS COM QUALIDADE E <br> RESPONSABILIDADE</h1>
+        </div>
+    </section>
+    <section class="centraliza_div">
+        <br><br>
+        <div class="servicos" style="padding: 15px;">
+            <h2>Projetos Elétricos</h2>
+        </div>
+        <div class="servicos" style="padding: 15px;">
+            <h2>Instalações</h2>
+        </div>
+        <div class="servicos" style="padding: 15px;">
+            <h2>Manutenção</h2>
+        </div>
+    </section>
+    <section>
+        <div style="background-color: #222121;">
+            <h1 style="color: white; margin-left: 35px;">Clientes</h1>
+        </div>
+    </section>
+    <section class="centraliza_div">
+        <br><br><br>
+        <div style="float: left; width: 33%;">
+            <img src="img/ebanx.png" alt="">
+            <br>
+            <br>
+            <img src="img/spacex.png" alt="">
+        </div>
+        <div style="float: left; width: 33%; margin-top: 100px;">
+            <img src="img/eletrobras.png" alt="">
+        </div>
+        <div style="float: left; width: 33%;">
+            <img src="img/microsoft.png" alt="">
+            <br>
+            <br>
+            <img src="img/nubank.png" alt="">
+        </div>
+    </section>
+    <section style="clear: both;">
+        <div style="background-color: #222121;">
+            <h1 style="color: white; margin-left: 35px;">Contato</h1>
+        </div>
+    </section>
+    <section style="float: left; width: 50%;">
+        <form>
+            <br><br>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <td><input type="text" size="50"></td>
+                </tr>
+                <tr>
+                    <th>E-mail</th>
+                    <td><input type="email" size="50"></td>
+                </tr>
+                <tr>
+                    <th>Fone</th>
+                    <td><input type="tel" size="14" placeholder="11-98745-1665"
+                            pattern="[0-9]{2}=[0-9]{5}-[0-9]{4} required"></td>
+                </tr>
+
+                <tr>
+                    <th>Mensagem</th>
+                    <td><textarea rows="5" cols="50"></textarea></td>
+                </tr>
+
+                <tr>
+                    <th></th>
+                    <td><input type="submit" value="Enviar"></td>
+                </tr>
+            </table>
+            <br><br>
+        </form>
+    </section>
+    <aside style="float: left;">
+        <div>
+            <br><br>
+            <img src="img/imgF.png" width="280px" height="150px">
+        </div>
+    </aside>
+    <footer style="clear: both;">
+        <div style="padding: 30px; background-color: #222121; color: white; font-size: larger;">
+            <table>
+                <tr>
+                    <td><img src="img/whats.png">(XX) 9XXXX-XXXX </td>
+                    <td></td>
+                    <td><img src="img/localiza.png">Minha localização</td>
+                </tr>
+                <tr>
+                    <td><img src="img/mail.png">email@email.com.br</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Layout desenvolvido para fins educacionais</td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+</body>
+
+</html>

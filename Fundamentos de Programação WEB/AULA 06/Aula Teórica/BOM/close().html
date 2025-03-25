@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function abreJanela() {
+            novaJanela = window.open('https://google.com', '_blank', 'width=400, height=400');
+        }
+
+        function fechaJanela() {
+            novaJanela.close();
+        }
+    </script>
+
+</head>
+
+<body>
+    <button onclick="abreJanela()">Abrir Janela</button>
+    <button onclick="fechaJanela()">Fechar Janela</button>
+</body>
+
+</html>

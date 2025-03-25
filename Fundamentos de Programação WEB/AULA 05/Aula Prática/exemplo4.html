@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*Receba dez numeros, fale quantos pares e ímpares*/
+
+        let contador = 1;
+        let contadorPares = 0;
+        let contadorImpares = 0;
+
+        while (contador <= 10) {
+            let numero = parseInt(prompt("Digite o " + contador + "º número: "));
+            contador++;
+            if (numero % 2 == 0) {
+                contadorPares++;
+            }
+            else {
+                contadorImpares++;
+            }
+        }
+
+        alert("Número(s) par(es): " + contadorPares
+            + "\nNúmero(s) ímpar(es): " + contadorImpares);
+1
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .artdirection {
+            max-width: 100%;
+            height: 15em;
+            border: 5px solid black;
+            background-image: url(img/c4141-320.jpg);
+            background-position: top;
+        }
+
+        @media screen and (min-width:20em) {
+            .artdirection {
+                border: 5px solid blue;
+                background-image: url(img/c4141-700.jpg);
+                height: 32.8125em;
+            }
+        }
+
+        @media screen and (min-width: 43.75em) {
+            .artdirection {
+                border: 5px solid green;
+                background-image: url(img/c4141-1000.jpg);
+                height: 46.875em;
+            }
+        }
+
+        @media screen and (min-width: 62.5em) {
+            .artdirection {
+                border: 5px solid red;
+                background-image: url(img/c4141-1600.jpg);
+                max-width: 100em;
+                height: 75em;
+            }
+        }
+
+        /* Retina */
+        @media screen and (-webkit-min-device-pixel-ratio: 2) and (orientation:portrait) and (max-width:20em) {
+            .artdirection {
+                height: 15em;
+                border: 5px solid black;
+                background-image: url(img/c4141-320\ 2x.png);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="artdirection">Exemploes de Imagens</div>
+</body>
+
+</html>
