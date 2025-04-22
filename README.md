@@ -1,6 +1,6 @@
 # Trabalhos de Faculdade - Lucas Camargo
 
-Este repositório contém os meus trabalhos realizados durante o curso de [Nome do Curso] na [Nome da Faculdade].
+Este repositório contém os meus trabalhos realizados durante o curso de Análise e Desenvolvimento de Sistemas na Uninter.
 
 ## Descrição
 
